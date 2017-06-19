@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "345829081797",
+    "firebase_url": "https://projectcodechef.firebaseio.com",
+    "project_id": "projectcodechef",
+    "storage_bucket": "projectcodechef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345829081797:android:d1c0cf389c6b3a96",
+        "android_client_info": {
+          "package_name": "com.md.projectcodechef"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345829081797-jn96b8ttsg6rhdih5hvjibdvijcn34r2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhZMEfSOq4OhMHNg-Fd6Qa5jPCeq8nR-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

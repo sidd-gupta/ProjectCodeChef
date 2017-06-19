@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.md.projectcodechef.RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your name"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/name"/>
+
+    <EditText
+        android:id="@+id/etRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:inputType="textEmailAddress"
+        android:hint="enter your email"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:gravity="center_horizontal"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/etRegPassword"/>
+
+    <EditText
+        android:id="@+id/etRegRePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="re-enter your password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="REGISTER"
+        android:textColor="#FFFFFF"
+        android:id="@+id/btRegister"
+        android:background="@color/colorPrimaryDark"
+        />
+</LinearLayout>

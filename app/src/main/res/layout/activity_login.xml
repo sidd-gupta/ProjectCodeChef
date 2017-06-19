@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.md.projectcodechef.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@mipmap/main_logo"
+        android:id="@+id/imageView"
+        android:layout_height="180dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="enter your email"
+        android:drawableLeft="@drawable/ic_email_black_24dp"        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:id="@+id/etEmail" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:hint="enter your password"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/etPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btLogin"
+        android:text="LOGIN"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btRegister"
+            android:background="@color/colorPrimaryDark"
+            android:text="REGISTER"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:id="@+id/btReset"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="RESET PASSWORD   "
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</LinearLayout>
