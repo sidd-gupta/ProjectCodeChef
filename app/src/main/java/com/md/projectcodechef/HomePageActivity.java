@@ -137,7 +137,12 @@ public class HomePageActivity extends AppCompatActivity {
         String message = etMessage.getText().toString();
         String number = etNumber.getText().toString();
 
-        if(ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
+        if(message.equals("")||message.trim().length()==0||number.equals("")||number.trim().length()==0)
+        {
+            Toast.makeText(this, "Please enter phone number/message", Toast.LENGTH_SHORT).show();
+        }
+
+        else if(ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
                 != PackageManager.PERMISSION_GRANTED)
         {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS},
@@ -156,7 +161,12 @@ public class HomePageActivity extends AppCompatActivity {
         String[] number = {"8870855940","8823949403","7530005573","9920820171","8797894230","9899967771","7585955911","7530009227","8220247204",
         "9629219208","8790238429"};
 
-        if(ContextCompat.checkSelfPermission(this,Manifest.permission.SEND_SMS)
+        if(message.equals("")||message.trim().length()==0)
+        {
+            Toast.makeText(this, "Please enter the message", Toast.LENGTH_SHORT).show();
+        }
+
+        else if(ContextCompat.checkSelfPermission(this,Manifest.permission.SEND_SMS)
             !=PackageManager.PERMISSION_GRANTED)
         {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS},
