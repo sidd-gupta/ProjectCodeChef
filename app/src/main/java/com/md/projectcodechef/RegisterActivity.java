@@ -66,7 +66,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
                 else{
-                    if(regPassword != regPassword){
+                    if(regPassword != regRetypePswrd){
                         Toast.makeText(RegisterActivity.this, "Password does not match", Toast.LENGTH_SHORT).show();
                     }
                     else {
