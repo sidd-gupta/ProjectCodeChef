@@ -158,8 +158,7 @@ public class HomePageActivity extends AppCompatActivity {
     public void sentToAll(View v)
     {
         String message = etMessage.getText().toString();
-        String[] number = {"8870855940","8823949403","7530005573","9920820171","8797894230","9899967771","7585955911","7530009227","8220247204",
-        "9629219208","8790238429"};
+        String[] number = {"//Add phone numbers"};
 
         if(message.equals("")||message.trim().length()==0)
         {
